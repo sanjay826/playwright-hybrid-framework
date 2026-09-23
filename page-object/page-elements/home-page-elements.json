@@ -1,0 +1,175 @@
+{
+  "pageTitle": "NutrisolutionsWebapp",
+  "logo": "//img[@alt='Logo']",
+
+  "companyNameHeaderText": "//p[contains(text(),'PRIDE AG RESOURCES')]",
+  "companyNameHeaderIcon": "//img[@alt='update profile']",
+
+  "helpIcon": "//mat-icon[contains(text(),'help_outline')]",
+  "helpButton": "//button[contains(.,'Help')]",
+
+  "accountIcon": "//mat-icon[normalize-space()='account_circle']",
+  "accountRetailerName": ".mat-subtitle-1",
+  "userRoleText": "span.mat-caption",
+
+  "logOutDropdownIcon": "img[alt='Dropdown']",
+  "logoutButtonIcon": "//mat-icon[normalize-space()='logout']",
+  "logoutButton": "//span[contains(text(),'Logout')]",
+
+  "dashboardHeaders": "span[class='mdc-button__label']",
+
+  "dashboardButton": "//button[contains(.,'Dashboard')]",
+  "workOrderListingButton": "//button[contains(.,'Work Order Listing')]",
+  "usersListingButton": "//button[contains(.,'Users Listing')]",
+  "labSetupButton": "//button[contains(.,'Lab Setup')]",
+  "productRecommendationButton": "//button[contains(.,'Product Recommendation')]",
+  "reportsButtonArrowIcon": "//mat-icon[normalize-space()='arrow_drop_down']",
+  "reportsButton": "//span[normalize-space()='Reports']",
+  "reportsDropdownItems": ".mat-mdc-menu-item-text",
+
+  "WorkOrderStatusHeader": {
+    "locator": "Work Order Status",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Work Order Status"
+  },
+  "arrowForwardIconOfWorkOrderStatus": {
+    "locator": "arrow_forward",
+    "locatorType": "getByText",
+    "nth": 0
+  },
+  "workOrderListingPageHeading": {
+    "locator": "Work Order Listings",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Work Order Listings"
+  },
+  "workOrderStatusChartSelectionYearWize": {
+    "locator": "year",
+    "locatorType": "getByText"
+  },
+  "selectedYearDropdownOption": "//span[contains(text(),'2026')]",
+  "ycoordinateTextNameOfChart": "[fill='222222']",
+
+  "workOrderStatusTable": "table:has-text('Work Orders')",
+  "workOrderStatusCells": "table:has-text('Work Orders') tbody td:nth-child(1)",
+  "addNewWorkOrderButton": "a[class='add-new-link']",
+  "totalWorkOrdersLabel": "//p[contains(text(),'Total Work Order')]",
+
+  "usersListingSection": "//h6[contains(text(),'Users Listing')]",
+  "expandButtonOfUsersListing": ".forward-arrow-icon",
+  "arrowForwardIconOfUsersListing": {
+    "locator": "arrow_forward",
+    "locatorType": "getByText",
+    "nth": 1
+  },
+  "tableRoleTextHeaderListingSection": {
+    "locator": "Role",
+    "locatorType": "getByText"
+  },
+  "tableUserTextHeaderListingSection": {
+    "locator": "User",
+    "locatorType": "getByText",
+    "exact": true
+  },
+  "tableCellValueForUserColumn": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "name": "RETAILERADMIN"
+  },
+  "tableCellValueForRoleColumn": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "name": "Retailer Admin Testmp04"
+  },
+
+  "userListingPageHeading": {
+    "locator": "Users Listing",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Users Listing"
+  },
+  "labSetup": {
+    "locator": "Lab Setup",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Lab Setup"
+  },
+  "labSetupArrowIcon": {
+    "locator": "arrow_forward",
+    "locatorType": "getByText",
+    "nth": 2
+  },
+  "labSetupTableHeaderPlotType": {
+    "locator": "Plot Type",
+    "locatorType": "getByText"
+  },
+  "labSetupTableHeaderSampleType": {
+    "locator": "Sample Type",
+    "locatorType": "getByText"
+  },
+  "labSetupTableHeaderAccountCode": {
+    "locator": "Account Code",
+    "locatorType": "getByText"
+  },
+  "labSetupTableCellValue_Grower": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "name": "Grower"
+  },
+  "labSetupTableCellValue_Tissue": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "name": "Tissue"
+  },
+  "labSetupTableCellValue_codeNumer": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "name": "1221"
+  },
+  "labSetupPageHeading": {
+    "locator": "Lab Setup",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Lab Setup"
+  },
+
+  "recentlyCreatedWorkOrdersSection": {
+    "locator": "Recently Created Work Orders",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Recently Created Work Orders"
+  },
+  "recentlyCreatedWoArrowIcon": {
+    "locator": "arrow_forward",
+    "locatorType": "getByText",
+    "nth": 3
+  },
+  "recentlyCreatedWoTableHeader_CreatedDate": {
+    "locator": "Created Date",
+    "locatorType": "getByText"
+  },
+  "recentlyCreatedWoTableHeader_Name": {
+    "locator": "Name",
+    "locatorType": "getByText"
+  },
+  "recentlyCreatedWoTableHeader_DueDate": {
+    "locator": "Due Date",
+    "locatorType": "getByText"
+  },
+  "recentlyCreatedWoTableHeader_Assignee": {
+    "locator": "Assignee",
+    "locatorType": "getByText"
+  },
+  "recentlyCreatedWoTableHeader_Status": {
+    "locator": "Status",
+    "locatorType": "getByText",
+    "exact": true
+  },
+  "recentlyCreatedWoTableheader_Grower": {
+    "locator": "Grower",
+    "locatorType": "getByRole",
+    "role": "columnheader",
+    "name": "Grower"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "defaultEnvironment": "stage",
+  "environments": {
+    "stage": {
+      "appUrl": "https://qanew.nutrisolutions360.winfield.com",
+      "apiBaseUrl": "https://apiqa.digitalag.farm"
+      
+    },
+    "production": {
+      "appUrl": "https://nutrisolutions360.winfield.com/",
+      "apiBaseUrl": ""
+    },
+    "qa": {
+      "appUrl": "",
+      "apiBaseUrl": ""
+    }
+  },
+  "app": {
+    "url": "https://qanew.nutrisolutions360.winfield.com",
+    "title": "Winfield United"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "my_database"
+  },
+  "api": {
+    "baseUrl": "https://apiqa.digitalag.farm",
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6Ii0tUGExaWh6UWtQalBJTWYzajRUZnFIcUVUY19SUzI1NiJ9.eyJzdWIiOiJ0ZXN0bXAwNWFAZ21haWwuY29tIiwiYXVkIjoicnNfY2xpZW50X25zIiwianRpIjoiblA4bExoWWk3aFMzRW9kMUpZNFpPOCIsImlzcyI6Imh0dHBzOi8vc3NvcWEubGFuZG9sYWtlc2luYy5jb20iLCJpYXQiOjE3ODg2MjUwNDgsImV4cCI6MTc4ODYyNjg0OCwicm9sZSI6IkdHX1Jlc3RyaWN0ZWRfTlNfVXNlcl9RQSIsIm5hbWUiOiJ0ZXN0bXAwNSIsImdpdmVuX25hbWUiOiJNUE9MIiwiZmFtaWx5X25hbWUiOiJQcm9kdWNlciJ9.C-ueuJgktocT2Kuy5b5evjpI1zms30XaokrOfsMdo-x9FU_xk0Ri9_tMI-mVgVGjv3aVE0gWNuCKKqnwAUYS9-cV4T7MTYN92ms--vHdc0dneS0kg_ekR5LH7JaYg4D8QngZ7bXRcunW8RxqtoMpqqzP-AScXE6nrtm5I1RG0nyQx9fM8r00lcjmuDO-ARMVT_R-uSSN71rsqEekR1UowJ0yQ5gaD2DTXG0rVjbaZSG_7Hqtg3I3JYnUJVYmGciU_4AaDmw6U0gZFCbTrZ574uB6KgELjDkcPtecQ4FmDWuYVqimzKYmcAd3H3BZc45JWiL1q9vJj-xR7dRZaXcVL61zHF0W02w_lmbIRPmDOGrlzKWNlfj1gei740ocfuq9cDhmy1CRqWbWvqJSRaT_IqLgqjtnvgtF-6UbEKhuIb80UgB8_tEc2VbcyR3oMP5X6ni89HkuibyfrUsYEZB9S2dnApgP42zivYpPyf9_cbmuy9ttfoPVhXrPtE7flfQATknJ0hZxOaTXTjBbXQULifdHrre12Q-67WIn1gt5HlvO-PZbdOuCoSxpexprTJOIb08DNP6VvhDhleMtkCyFS9zd_BFc_-vI1VG3CfCPQZ_zOk0YrZFqsCOEgSVZ6iIduMILIrU16zyL_JB_iqSfH7BfkeYUlSEAkuCkv9i1RfE",
+    "x-api-key": "smlmaug5cnzqg26iwxnmrg7g1plmxd63"
+  },
+  "demoLoginBase_URL": "https://practicetestautomation.com/"
+  
+}

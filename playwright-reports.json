@@ -1,0 +1,661 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep",
+      "@TC-Demo"
+    ],
+    "configFile": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\playwright.config.ts",
+    "rootDir": "C:/Users/sanjay.kumar/LocalBin_sanjay.kumar/Playwright/playwright-tdd-framework/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/sanjay.kumar/LocalBin_sanjay.kumar/Playwright/playwright-tdd-framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sanjay.kumar/LocalBin_sanjay.kumar/Playwright/playwright-tdd-framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 600000
+      },
+      {
+        "outputDir": "C:/Users/sanjay.kumar/LocalBin_sanjay.kumar/Playwright/playwright-tdd-framework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/sanjay.kumar/LocalBin_sanjay.kumar/Playwright/playwright-tdd-framework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 600000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        {
+          "printSteps": true
+        }
+      ],
+      [
+        "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\utilities\\logger.ts",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-reports.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Demo-1\\login.tests.spec.ts",
+      "file": "Demo-1/login.tests.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@TC-Demo.abc-1.1 | Verify login functionality",
+          "ok": false,
+          "tags": [
+            "TC-Demo.abc-1.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 47307,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\n    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\n    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9",
+                    "location": {
+                      "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                      "column": 19,
+                      "line": 100
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                        "column": 19,
+                        "line": 100
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\u001b[22m\n\u001b[2m    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\u001b[22m\n\u001b[2m    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:05.727Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:04.621Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-ebdaf--Verify-login-functionality-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-ebdaf--Verify-login-functionality-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBjaHJvbWl1bSA+IERlbW8tMVxcbG9naW4udGVzdHMuc3BlYy50cyA+IEBUQy1EZW1vLmFiYy0xLjEgfCBWZXJpZnkgbG9naW4gZnVuY3Rpb25hbGl0eSIsInRpbWVzdGFtcCI6IjIwMjYtMDktMjNUMDk6MzU6MDQuNjI0WiJ9"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                    "column": 19,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-6c59cc3d5ae5c4901f53",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-4.1 | Verify login functionality",
+          "ok": false,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-4.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 48606,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\n    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\n    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9",
+                    "location": {
+                      "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                      "column": 19,
+                      "line": 100
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                        "column": 19,
+                        "line": 100
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\u001b[22m\n\u001b[2m    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\u001b[22m\n\u001b[2m    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:05.573Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:04.616Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-7c9ad--Verify-login-functionality-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-7c9ad--Verify-login-functionality-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uYWJjLTEuMSB8IFZlcmlmeSBsb2dpbiBmdW5jdGlvbmFsaXR5IiwidGltZXN0YW1wIjoiMjAyNi0wOS0yM1QwOTozNTo1My4wMjdaIn0="
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                    "column": 19,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-fcb0e054cba4ca067d06",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-3.1 | Verify login functionality",
+          "ok": false,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-3.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 51629,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\n    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\n    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9",
+                    "location": {
+                      "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                      "column": 19,
+                      "line": 100
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                        "column": 19,
+                        "line": 100
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\u001b[22m\n\u001b[2m    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\u001b[22m\n\u001b[2m    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:05.683Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:04.604Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-e999f--Verify-login-functionality-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-e999f--Verify-login-functionality-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNC4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU0LjU1N1oifQ=="
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                    "column": 19,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-0ad9a364ad4548967c99",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-5.1 | Verify login functionality",
+          "ok": false,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-5.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 66619,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#username')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#username')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\n    at WebCommons.element (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:86:27)\n    at WebCommons.typeText (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:140:32)\n    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:23:20)\n    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:26",
+                    "location": {
+                      "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                      "column": 27,
+                      "line": 86
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:86\n\n\u001b[0m \u001b[90m 84 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m\n \u001b[90m 85 |\u001b[39m       \u001b[36mtypeof\u001b[39m locator \u001b[33m===\u001b[39m \u001b[32m\"string\"\u001b[39m \u001b[33m?\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(locator) \u001b[33m:\u001b[39m locator\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m     \u001b[36mawait\u001b[39m expect(element)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   }\n \u001b[90m 89 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                        "column": 27,
+                        "line": 86
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('#username')\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('#username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:86\n\n\u001b[0m \u001b[90m 84 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m\n \u001b[90m 85 |\u001b[39m       \u001b[36mtypeof\u001b[39m locator \u001b[33m===\u001b[39m \u001b[32m\"string\"\u001b[39m \u001b[33m?\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(locator) \u001b[33m:\u001b[39m locator\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m     \u001b[36mawait\u001b[39m expect(element)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     \u001b[36mreturn\u001b[39m element\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m   }\n \u001b[90m 89 |\u001b[39m\u001b[0m\n\u001b[2m    at WebCommons.element (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:86:27)\u001b[22m\n\u001b[2m    at WebCommons.typeText (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:140:32)\u001b[22m\n\u001b[2m    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:23:20)\u001b[22m\n\u001b[2m    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:26\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:05.684Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:04.574Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-78a74--Verify-login-functionality-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-78a74--Verify-login-functionality-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-78a74--Verify-login-functionality-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU5Ljg0MFoifQp7ImR1cmF0aW9uIjoxNTAyLCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibWVzc2FnZSI6IlRlc3QgcGFzc2VkIiwicmV0cnkiOjAsInN0YXR1cyI6InBhc3NlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM2OjAxLjM1M1oifQp7ImR1cmF0aW9uIjo0MDI2LCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibWVzc2FnZSI6IlRlc3QgcGFzc2VkIiwicmV0cnkiOjAsInN0YXR1cyI6InBhc3NlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtMy4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM2OjAzLjQ1MFoifQ=="
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                    "column": 27,
+                    "line": 86
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-bddd048e39a2ed1b6bcb",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.abc-1.1 | Verify login functionality",
+          "ok": false,
+          "tags": [
+            "TC-Demo.abc-1.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 32845,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\n    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\n    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9",
+                    "location": {
+                      "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                      "column": 19,
+                      "line": 100
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                        "column": 19,
+                        "line": 100
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#submit')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"submit\" class=\"btn\">Submit</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\commons\\ui\\web-commons.ts:100\n\n\u001b[0m \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m element \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39melement(locator)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlog\u001b[33m.\u001b[39mdebug(\u001b[32m`click ${this.describe(locator)}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m element\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m   }\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m   \u001b[36masync\u001b[39m clickNthElement(locator\u001b[33m:\u001b[39m flex\u001b[33m,\u001b[39m index\u001b[33m:\u001b[39m number)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\u001b[0m\n\u001b[2m    at WebCommons.clickElement (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts:100:19)\u001b[22m\n\u001b[2m    at DemoLoginSteps.login (C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\page-object\\page-steps\\demo-login.steps.ts:25:5)\u001b[22m\n\u001b[2m    at C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\tests\\Demo-1\\login.tests.spec.ts:14:9\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:54.940Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:53.027Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-ebdaf--Verify-login-functionality-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-ebdaf--Verify-login-functionality-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\test-results\\Demo-1-login.tests--TC-Dem-ebdaf--Verify-login-functionality-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU5Ljg0MFoifQp7ImR1cmF0aW9uIjoxNTAyLCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibWVzc2FnZSI6IlRlc3QgcGFzc2VkIiwicmV0cnkiOjAsInN0YXR1cyI6InBhc3NlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM2OjAxLjM1M1oifQp7ImR1cmF0aW9uIjo0MDI2LCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibWVzc2FnZSI6IlRlc3QgcGFzc2VkIiwicmV0cnkiOjAsInN0YXR1cyI6InBhc3NlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtMy4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM2OjAzLjQ1MFoifQp7ImR1cmF0aW9uIjo2NjYxOSwiZXJyb3JzIjpbIkVycm9yOiBcdTAwMWJbMm1leHBlY3QoXHUwMDFiWzIybVx1MDAxYlszMW1sb2NhdG9yXHUwMDFiWzM5bVx1MDAxYlsybSkuXHUwMDFiWzIybXRvQmVWaXNpYmxlXHUwMDFiWzJtKFx1MDAxYlsyMm1cdTAwMWJbMm0pXHUwMDFiWzIybSBmYWlsZWRcblxuTG9jYXRvcjogbG9jYXRvcignI3VzZXJuYW1lJylcbkV4cGVjdGVkOiB2aXNpYmxlXG5UaW1lb3V0OiAxNTAwMG1zXG5FcnJvcjogZWxlbWVudChzKSBub3QgZm91bmRcblxuQ2FsbCBsb2c6XG5cdTAwMWJbMm0gIC0gRXhwZWN0IFwidG9CZVZpc2libGVcIiB3aXRoIHRpbWVvdXQgMTUwMDBtc1x1MDAxYlsyMm1cblx1MDAxYlsybSAgLSB3YWl0aW5nIGZvciBsb2NhdG9yKCcjdXNlcm5hbWUnKVx1MDAxYlsyMm1cbiJdLCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJlcnJvciIsIm1lc3NhZ2UiOiJUZXN0IGZhaWxlZCIsInJldHJ5IjowLCJzdGF0dXMiOiJmYWlsZWQiLCJ0ZXN0IjoiID4gY2hyb21pdW0gPiBEZW1vLTFcXGxvZ2luLnRlc3RzLnNwZWMudHMgPiBAVEMtRGVtby5kZW1vTG9naW5DcmVkZW50aWFscy01LjEgfCBWZXJpZnkgbG9naW4gZnVuY3Rpb25hbGl0eSIsInRpbWVzdGFtcCI6IjIwMjYtMDktMjNUMDk6MzY6MTEuNzA1WiJ9"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\sanjay.kumar\\LocalBin_sanjay.kumar\\Playwright\\playwright-tdd-framework\\commons\\ui\\web-commons.ts",
+                    "column": 19,
+                    "line": 100
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-4e3fa2c6b1bbb63cfe6b",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-4.1 | Verify login functionality",
+          "ok": true,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-4.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4523,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:35:56.329Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:54.552Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtMy4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU4LjgzN1oifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-2d6fef6291f040373567",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-3.1 | Verify login functionality",
+          "ok": true,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-3.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4026,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:36:00.300Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:58.834Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU5Ljg0MFoifQp7ImR1cmF0aW9uIjoxNTAyLCJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibWVzc2FnZSI6IlRlc3QgcGFzc2VkIiwicmV0cnkiOjAsInN0YXR1cyI6InBhc3NlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM2OjAxLjM1M1oifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-e1eb7c3dc78232c5fff5",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@TC-Demo.demoLoginCredentials-5.1 | Verify login functionality",
+          "ok": true,
+          "tags": [
+            "TC-Demo.demoLoginCredentials-5.1"
+          ],
+          "tests": [
+            {
+              "timeout": 600000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1502,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\"level\":\"info\",\"message\":\"Launching application: https://practicetestautomation.com/practice-test-login/\",\"timestamp\":\"2026-09-23T09:36:00.166Z\"}\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-23T09:35:59.835Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "winston-log",
+                      "contentType": "text/plain",
+                      "body": "eyJmaWxlIjoiQzpcXFVzZXJzXFxzYW5qYXkua3VtYXJcXExvY2FsQmluX3NhbmpheS5rdW1hclxcUGxheXdyaWdodFxccGxheXdyaWdodC10ZGQtZnJhbWV3b3JrXFx0ZXN0c1xcRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzIiwibGV2ZWwiOiJpbmZvIiwibGluZSI6OCwibWVzc2FnZSI6IlRlc3Qgc3RhcnRlZCIsInRlc3QiOiIgPiBmaXJlZm94ID4gRGVtby0xXFxsb2dpbi50ZXN0cy5zcGVjLnRzID4gQFRDLURlbW8uZGVtb0xvZ2luQ3JlZGVudGlhbHMtNS4xIHwgVmVyaWZ5IGxvZ2luIGZ1bmN0aW9uYWxpdHkiLCJ0aW1lc3RhbXAiOiIyMDI2LTA5LTIzVDA5OjM1OjU5Ljg0MFoifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5d23d507ea88bc54043-d936bc233b5759d084bd",
+          "file": "Demo-1/login.tests.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-23T09:35:02.990Z",
+    "duration": 84341.729,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pageTitle": "Login - Winfield United",
+  "logo": "img[alt='wu-logo']",
+  "username": "//input[@id='username']",
+  "password": "//input[@id='password']",
+  "loginButton": "button[type='submit']",
+  "forgotUsernameLink": "//a[normalize-space(text())='Forgot Username']",
+  "forgotPasswordLink": "//a[normalize-space(text())='Forgot Password']",
+  "loginErrorMessage": "div:nth-child(4)",
+  "createAccountLink": "//a[normalize-space(text())='Create an Account']",
+  "helpLinkText": "a[href='#']",
+  "forgotUsernamePage": "//span[normalize-space(text())='Forgot Your Username']",
+  "forgotPasswordPage": "//span[normalize-space(text())='Forgot Your Password']",
+  "registrationPage": "//h3[normalize-space()='Registration']"
+}

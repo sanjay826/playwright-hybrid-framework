@@ -1,0 +1,157 @@
+{
+  "newWorkOrderHeading": {
+    "locator": "New Work Order",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "New Work Order"
+  },
+  "workOrderNameInput": {
+    "locator": "Work Order Name",
+    "locatorType": "getByLabel"
+  },
+  "editButton": {
+    "locator": "Edit",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Edit"
+  },
+  "growerDropdown": {
+    "locator": "Select Grower",
+    "locatorType": "getByPlaceholder"
+  },
+  "farmNameInput": {
+    "locator": "Farm Name",
+    "locatorType": "getByLabel"
+  },
+  "fieldNameInput": {
+    "locator": "Field Name",
+    "locatorType": "getByLabel"
+  },
+  "dateInput": {
+    "locator": "Due Date *",
+    "locatorType": "getByLabel"
+  },
+  "openCalendarButton": {
+    "locator": "Open calendar",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Open calendar"
+  },
+  "sampleTypeDropdown": {
+    "locator": "Soil",
+    "locatorType": "getByRole",
+    "role": "radio",
+    "name": "Soil"
+  },
+  "tissueSampleTypeRadio": {
+    "locator": "Tissue",
+    "locatorType": "getByRole",
+    "role": "radio",
+    "name": "Tissue"
+  },
+  "cropDropdown": {
+    "locator": "Crop *",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Crop *"
+  },
+  "growthStageDropdown": {
+    "locator": "Growth Stage *",
+    "locatorType": "getByText"
+  },
+  "growthStageInput": "#mat-option-281",
+  "sampleDepthDropdown": {
+    "locator": "Sample Depth",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Sample Depth"
+  },
+  "plotTypeDropdown": {
+    "locator": "Plot Type",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Plot Type"
+  },
+  "labDropdown": {
+    "locator": "Lab Name",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Lab Name"
+  },
+  "labLocationDropdown": {
+    "locator": "Lab Location",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Lab Location"
+  },
+  "testPackageDropdown": {
+    "locator": "Test Package",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Test Package"
+  },
+  "testPackageRadio": "Routine Analysis: Nitrogen, Phosphorus, Potassium, Calcium, Magnesium, Boron, Copper, Iron, Manganese, Sulfur and Zinc",
+  "doneButton": {
+    "locator": "Done",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Done"
+  },
+  "addSampleButton": {
+    "locator": "Add Sample",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Add Sample"
+  },
+  "assigneeDropdown": {
+    "locator": "Assignee",
+    "locatorType": "getByRole",
+    "role": "combobox",
+    "name": "Assignee"
+  },
+  "createSuccessToast": ".mat-mdc-snack-bar-container",
+  "submitButton": {
+    "locator": "Submit",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Submit"
+  },
+  "confirmationToast": ".mat-mdc-snack-bar-container",
+  "okButton": {
+    "locator": "OK",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "OK"
+  },
+  "loaderOverlay": ".loader-overlay",
+  "growerSearchDialog": {
+    "locator": "dialog",
+    "locatorType": "getByRole",
+    "role": "dialog",
+    "name": ""
+  },
+  "sampleNameInput": {
+    "locator": "Sample Name",
+    "locatorType": "getByRole",
+    "role": "textbox",
+    "name": "Sample Name"
+  },
+  "sampleDialogDoneButton": {
+    "locator": "Done",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Done"
+  },
+  "mapRegion": {
+    "locator": "Map",
+    "locatorType": "getByRole",
+    "role": "region",
+    "name": "Map"
+  },
+  "nextButton": {
+    "locator": "Next",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Next"
+  }
+}

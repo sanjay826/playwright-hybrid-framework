@@ -1,0 +1,101 @@
+{
+  "loginDetails": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/Login/Authenticate",
+    "expectedStatusCode": 200,
+    "userRetailerId": "9771",
+    "expectedMessage": "OK",
+    "userRetailerName": "PRIDE AG RESOURCES",
+    "userId": "testmp05",
+    "expDataType": "string"
+  },
+  "allUsers": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/user/GetUsers",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "userId": "chrisj96",
+    "expDataType": "string"
+  },
+  "activeUsers": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/user/GetUsers/farms301",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "userId": "farms301",
+    "firstName": "3R",
+    "lastName": "Farms",
+    "expDataType": "string"
+  },
+  "allUserRetailers": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/user/UserRetailer",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "userRetailerId": "9771",
+    "PlotTypeName": "Grower",
+    "expDataType": "string"
+  },
+  "userCount": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/user/GetUsers",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "expDataType": "string",
+    "userRetailerABNumber": "9166381",
+    "userRoleName": "RETAILERADMIN"
+  },
+  "configurationNewToken": {
+    "Grant type": "Authorization Code",
+    "Callback URL": "https://qa.nutrisolutions360.winfield.com",
+    "Auth URL": "https://ssoqa.landolakesinc.com/as/authorization.oauth2",
+    "Access Token URL": "https://ssoqa.landolakesinc.com/as/token.oauth2",
+    "Client Secret": "yULsREtownsZxqfvSPnz0zVM",
+    "Client Authentication": "Send as Basic Auth header"
+  },
+  "retrievespecificworkorders": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/workorders/GetWorkorder/12345",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "id": "162724",
+    "Grower_Id": "403414",
+    "RetailerId": "9771",
+    "expDataType": "string",
+    "retailerName": "PRIDE AG RESOURCES"
+  },
+  "RecentWorkorders": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/workorders/GetRecentWorkOrders?RetailerId=1&year=2026",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "expDataType": "string",
+    "IsPaperProcess": false,
+    "GrowerName": "FINK FARM"
+  },
+  "allWorkordersCount": {
+    "requestType": "get",
+    "endpoint": "/nsapi/v1/workorders/GetWorkOrderCount?year=2026",
+    "expectedStatusCode": 200,
+    "expectedMessage": "OK",
+    "expDataType": "string",
+    "InDraftWorkOrder": 12,
+    "InProgressWorkOrder": 2,
+    "SubmittedWorkOrder": 15,
+    "CompletedWorkOrder": 0,
+    "InCompleteWorkOrder": 0,
+    "InReconcilationWorkOrder": 4,
+    "TotalWorkOrder": 29,
+    "UserRoleName": "RETAILERADMIN"
+  },
+  "tokenUrl": {
+    "content-type": "application/x-www-form-urlencoded",
+    "form": {
+      "grant_type": "authorization code",
+      "client_id": "18jOVStcIwcGsmPcRcE1",
+      "client_secret": "your_client_secret",
+      "username": "your_username",
+      "password": "your_password"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "Verify login functionality with invalid credentials": {
+    "errorMessageForInvalidCredentials": "Password entered is invalid or has expired. Click Forgot Password to reset."
+  },
+
+  "Verify help link text": {
+    "expectedHelpLinkText": "Need sign in help?\nUnited States: 1-855-494-6343\nCanada: 1-888-975-4769"
+  },
+  "Verify home screen or dashboard UI": {
+    "expectedTitle": "NutrisolutionsWebapp",
+    "expectedPageUrl": "https://qanew.nutrisolutions360.winfield.com/app/dashboard/rfa",
+    "expectedItems": [
+      "Search PDF Results",
+      "Sample Status summary",
+      "Sample Summary and Test Results",
+      "Search by Bag QR Code",
+      "Search by Bag QR Code",
+      "Nutrients by Sample"
+    ]
+  },
+  "Verify Work Order Listings page": {
+    "expectedWorkOrderStateTabs": [
+      "Draft",
+      "In Progress",
+      "Submitted",
+      "Completed",
+      "Incomplete"
+    ]
+  }
+}

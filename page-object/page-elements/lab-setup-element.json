@@ -1,0 +1,54 @@
+{
+  "labSetupPageHeading": {
+    "locator": "Lab Setup",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Lab Setup"
+  },
+  "labSetupTable": "table:has(th:has-text('Plot Type'))",
+  "labSetupTableRows": "table:has(th:has-text('Plot Type')) tbody tr",
+  "plotTypeHeader": {
+    "locator": "Plot Type",
+    "locatorType": "getByText"
+  },
+  "sampleTypeHeader": {
+    "locator": "Sample Type",
+    "locatorType": "getByText"
+  },
+  "accountCodeHeader": {
+    "locator": "Account Code",
+    "locatorType": "getByText"
+  },
+  "growerCell": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "role": "cell",
+    "name": "Grower"
+  },
+  "tissueCell": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "role": "cell",
+    "name": "Tissue"
+  },
+  "accountCodeCell": {
+    "locator": "cell",
+    "locatorType": "getByRole",
+    "role": "cell",
+    "name": "1221"
+  },
+  "addLabButton": {
+    "locator": "Add Lab",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Add Lab"
+  },
+  "newLabRow": "table:has(th:has-text('Plot Type')) tbody tr:first-child",
+  "saveLabButton": {
+    "locator": "Save",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Save"
+  },
+  "saveSuccessToast": ".mat-mdc-snack-bar-container"
+}

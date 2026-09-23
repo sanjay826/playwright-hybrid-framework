@@ -1,0 +1,29 @@
+{
+  "workOrderListingPageHeader": {
+    "locator": "Work Order Listings",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Work Order Listings"
+  },
+  "addNewWorkOrderButton": {
+    "locator": "Add New Work Order",
+    "locatorType": "getByRole",
+    "role": "button",
+    "name": "Add New Work Order"
+  },
+  "draft": { "locator": "Draft", "locatorType": "getByText" },
+  "inPorgress": { "locator": "In Progress", "locatorType": "getByText" },
+  "submitted": { "locator": "Submitted", "locatorType": "getByText" },
+  "completed": { "locator": "Completed", "locatorType": "getByText" },
+  "incomplete": { "locator": "Incomplete", "locatorType": "getByText" },
+  "allWorkOrderStats": "span[class='mdc-tab__text-label']",
+  "sampleTypeDropdown": {
+    "locator": ".mat-mdc-select-placeholder >> nth=0",
+    "locatorType": "css"
+  },
+  "woNameField": {
+    "locator": "Wo Name",
+    "locatorType": "getByText",
+    "exact": true
+  }
+}

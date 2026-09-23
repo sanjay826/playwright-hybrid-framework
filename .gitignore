@@ -1,0 +1,17 @@
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Local app/cache files
+files/auth-cache.json
+
+# Dependencies
+node_modules/
+
+# Test and report artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

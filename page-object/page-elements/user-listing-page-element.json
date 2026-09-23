@@ -1,0 +1,23 @@
+{
+  "userListingPageHeading": {
+    "locator": "Users Listing",
+    "locatorType": "getByRole",
+    "role": "heading",
+    "name": "Users Listing"
+  },
+  "userListingTable": "table",
+  "userListingTableHeaders": "table thead th",
+  "userListingTableRows": "table tbody tr",
+  "userListingUserHeader": {
+    "locator": "User",
+    "locatorType": "getByRole",
+    "role": "columnheader",
+    "name": "User"
+  },
+  "userListingRoleHeader": {
+    "locator": "Role",
+    "locatorType": "getByRole",
+    "role": "columnheader",
+    "name": "Role"
+  }
+}
